@@ -1,32 +1,14 @@
-
--- return {
---   {
---     "LazyVim/LazyVim",
---     opts = {
---       colorscheme = "catppuccin",
---     },
---   },
---   {
---     "catppuccin",
---     opts = {
---       transparent_background = true,
---     },
---   },
--- }
-
 return {
   {
-    "LazyVim/LazyVim",
+    "ellisonleao/gruvbox.nvim",
     opts = {
-      colorscheme = "gruvbox-material",
+      transparent_mode = true, -- تفعيل وضع الشفافية
     },
   },
   {
-    "sainnhe/gruvbox-material",
-    init = function()
-      vim.g.gruvbox_material_background = "hard" -- soft | medium | hard
-      vim.g.gruvbox_material_transparent_background = 1
-    end,
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
   },
 }
-
